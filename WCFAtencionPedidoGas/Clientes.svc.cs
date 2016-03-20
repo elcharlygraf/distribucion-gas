@@ -31,7 +31,6 @@ namespace WCFAtencionPedidoGas
             return clienteDAO.Listar();
         }
 
-
         public Cliente ObtenerCliente(string telefono)
         {
             return clienteDAO.Obtener(telefono);
