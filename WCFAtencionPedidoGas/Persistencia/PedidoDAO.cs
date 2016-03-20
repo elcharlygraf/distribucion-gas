@@ -26,7 +26,13 @@ namespace WCFAtencionPedidoGas.Persistencia
                     comando.Parameters.Add(new SqlParameter("@idEstado", pedidoACrear.idEstado));
                     comando.Parameters.Add(new SqlParameter("@fechaPedido", pedidoACrear.fechaPedido));
 
-                    comando.ExecuteNonQuery();
+                    int identityPeido = (int)comando.ExecuteScalar();
+
+                    pedidoCreado = Obtener(identityPeido);
+                    pedidoCreado.detalle = pedidoACrear.detalle;
+
+                    conexion.Close();
+                    detalleDAO.Crear(pedidoACrear.detalle);
                 }
             }
             return pedidoCreado;

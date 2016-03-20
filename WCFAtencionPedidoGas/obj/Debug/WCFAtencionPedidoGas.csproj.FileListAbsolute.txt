@@ -15,3 +15,8 @@ C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistr
 C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.csprojResolveAssemblyReference.cache
 C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.dll
 C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.pdb
+C:\Users\rasec\GitUpc\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.dll
+C:\Users\rasec\GitUpc\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.pdb
+C:\Users\rasec\GitUpc\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.csprojResolveAssemblyReference.cache
+C:\Users\rasec\GitUpc\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.dll
+C:\Users\rasec\GitUpc\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.pdb
