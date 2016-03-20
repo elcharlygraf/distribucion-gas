@@ -131,7 +131,7 @@ namespace WCFAtencionPedidoGas.Persistencia
                         {
                             pedidoEncontrado = new Pedido()
                             {
-                                idPedido = (int)resultado["idPedido"],
+                                //idPedido = (int)resultado["idPedido"],
                                 idCliente = (int)resultado["idCliente"],
                                 montoTotal = (decimal)resultado["montoTotal"],
                                 idEstado = (int)resultado["idEstado"],
