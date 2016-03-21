@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ServiceModel;
+using System.ServiceModel.Web;
 using WCFAtencionPedidoGas.Dominio;
 using WCFAtencionPedidoGas.Errores;
 using WCFAtencionPedidoGas.Persistencia;
@@ -11,6 +12,7 @@ namespace WCFAtencionPedidoGas
     {
         private ClienteDAO clienteDAO = new ClienteDAO();
 
+        
         public Cliente CrearCliente(Cliente clienteACrear)
         {
             if (clienteDAO.Obtener(clienteACrear.telefono) != null)
@@ -25,7 +27,7 @@ namespace WCFAtencionPedidoGas
             }
             return clienteDAO.Crear(clienteACrear);
         }
-
+        
         public List<Cliente> ListarClientes()
         {
             return clienteDAO.Listar();

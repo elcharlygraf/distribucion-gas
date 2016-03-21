@@ -31,8 +31,9 @@ namespace WCFAtencionPedidoGas.Persistencia
                     pedidoCreado = Obtener(identityPeido);
                     pedidoCreado.detalle = pedidoACrear.detalle;
 
+                    
+                    //detalleDAO.Crear(pedidoACrear.detalle);
                     conexion.Close();
-                    detalleDAO.Crear(pedidoACrear.detalle);
                 }
             }
             return pedidoCreado;

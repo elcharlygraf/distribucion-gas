@@ -20,3 +20,8 @@ C:\Users\rasec\GitUpc\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.pdb
 C:\Users\rasec\GitUpc\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.csprojResolveAssemblyReference.cache
 C:\Users\rasec\GitUpc\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.dll
 C:\Users\rasec\GitUpc\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.pdb
+C:\distribucion-gas\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.csprojResolveAssemblyReference.cache
+C:\distribucion-gas\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.dll
+C:\distribucion-gas\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.dll
+C:\distribucion-gas\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.pdb
+C:\distribucion-gas\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.pdb
