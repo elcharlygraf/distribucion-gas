@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFAtencionPedidoGas", "WCFAtencionPedidoGas\WCFAtencionPedidoGas.csproj", "{117D3261-59CD-44AA-ACF4-29FC7495B37C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClientes", "TestClientes\TestClientes.csproj", "{98CB43D4-A3BF-49E3-B07F-81BBBE1508DB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{117D3261-59CD-44AA-ACF4-29FC7495B37C} = {117D3261-59CD-44AA-ACF4-29FC7495B37C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFClientes", "WCFClientes\WCFClientes.csproj", "{27855A2C-34F2-431B-B884-E873FEF26ED2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{117D3261-59CD-44AA-ACF4-29FC7495B37C} = {117D3261-59CD-44AA-ACF4-29FC7495B37C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{117D3261-59CD-44AA-ACF4-29FC7495B37C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117D3261-59CD-44AA-ACF4-29FC7495B37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117D3261-59CD-44AA-ACF4-29FC7495B37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117D3261-59CD-44AA-ACF4-29FC7495B37C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98CB43D4-A3BF-49E3-B07F-81BBBE1508DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98CB43D4-A3BF-49E3-B07F-81BBBE1508DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98CB43D4-A3BF-49E3-B07F-81BBBE1508DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98CB43D4-A3BF-49E3-B07F-81BBBE1508DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27855A2C-34F2-431B-B884-E873FEF26ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27855A2C-34F2-431B-B884-E873FEF26ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27855A2C-34F2-431B-B884-E873FEF26ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27855A2C-34F2-431B-B884-E873FEF26ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

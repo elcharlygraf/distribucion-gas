@@ -1,0 +1,27 @@
+C:\DSistribuidos\losDistribuidos\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.dll
+C:\DSistribuidos\losDistribuidos\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.pdb
+C:\DSistribuidos\losDistribuidos\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.csprojResolveAssemblyReference.cache
+C:\DSistribuidos\losDistribuidos\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.dll
+C:\DSistribuidos\losDistribuidos\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.pdb
+C:\Users\Administrator.MOVIL2H\Desktop\losDistribuidos\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.dll.config
+C:\Users\Administrator.MOVIL2H\Desktop\losDistribuidos\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.dll
+C:\Users\Administrator.MOVIL2H\Desktop\losDistribuidos\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.pdb
+C:\Users\Administrator.MOVIL2H\Desktop\losDistribuidos\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.dll
+C:\Users\Administrator.MOVIL2H\Desktop\losDistribuidos\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.pdb
+C:\Users\Administrator.MOVIL2H\Desktop\losDistribuidos\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.csprojResolveAssemblyReference.cache
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.dll.config
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.dll
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.pdb
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.csprojResolveAssemblyReference.cache
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.dll
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.pdb
+C:\Users\rasec\GitUpc\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.dll
+C:\Users\rasec\GitUpc\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.pdb
+C:\Users\rasec\GitUpc\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.csprojResolveAssemblyReference.cache
+C:\Users\rasec\GitUpc\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.dll
+C:\Users\rasec\GitUpc\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.pdb
+C:\distribucion-gas\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.csprojResolveAssemblyReference.cache
+C:\distribucion-gas\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.dll
+C:\distribucion-gas\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.dll
+C:\distribucion-gas\WCFAtencionPedidoGas\bin\WCFAtencionPedidoGas.pdb
+C:\distribucion-gas\WCFAtencionPedidoGas\obj\Debug\WCFAtencionPedidoGas.pdb

@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GAS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">GAS</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Inicio</a></li>
+            <li><a href="#atencion">Atención de pedidos</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+    <div class="jumbotron">      
+      
+      <div class="row">
+
+        <div class="col-md-6">
+          <h4>Datos del Cliente:</h4>
+          <form class="form-horizontal">
+            
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Teléfono</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Cliente</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Dirección</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-3">
+                  <label for="name">Departamento:</label>
+                  <select class="form-control">
+                    <option>Lima</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="name">Provincia:</label>
+                  <select class="form-control">
+                    <option>Lima</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="name">Distrito:</label>
+                  <select class="form-control">
+                    <option>San Borja</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="name">Sector:</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+
+          <button type="button" class="btn btn-success btn-sm" data-toggle="modal">
+            + Agregar
+          </button>
+
+          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#searchCall">
+            Hist. LLamadas
+          </button>
+
+          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#searchClient">
+            Busqueda de Clientes
+          </button>          
+
+          <!-- Modal -->
+          <div class="modal fade" id="searchCall" tabindex="-1" role="dialog" aria-labelledby="searchCall">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Historial de Llamadas</h4>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-responsive">
+                    <thead>
+                      <tr>
+                        <td>Fecha</td>
+                        <td>Motivo</td>
+                        <td>Observaciones</td>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>13/10/2016</td>
+                        <td>Pedido</td>
+                        <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="searchDelivery" tabindex="-1" role="dialog" aria-labelledby="searchDelivery">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Seguimiento de Pedidos</h4>
+                </div>
+                <div class="modal-body">
+                  
+                  <div class="form-group">
+                    <div class="col-md-6"><label>Fecha de Pedido:</label>
+                      <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-6"><label>Fecha de Entrega:</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group">                    
+                    <div class="col-sm-12">
+                      <label>Clientes:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-5">
+                      <label>Distrito:</label>
+                      <select class="form-control">
+                        <option>San Borja</option>
+                      </select>
+                    </div>  
+                    <div class="col-sm-7">
+                      <label>Dirección:</label>
+                      <input type="text" class="form-control">
+                    </div>  
+                  </div>
+
+                  <div class="form-group">
+                    <table class="table table-responsive">
+                      <thead>
+                        <tr>
+                          <td><strong>Fecha</strong></td>
+                          <td><strong>Evento</strong></td>
+                          <td><strong>Distribuidor</strong></td>
+                          <td><strong>Observaciones</strong></td>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>13/10/2015</td>
+                          <td>Registrado pendiente</td>
+                          <td>Venta directa</td>
+                          <td>-</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="searchClient" tabindex="-1" role="dialog" aria-labelledby="searchClient">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Busqueda de Clientes</h4>
+                </div>
+                <div class="modal-body">
+                  <p>
+                  <label>Buscar por:</label>
+                  <select class="form-control">
+                    <option>Teléfono</option>
+                    <option>Nombre/Razón Social</option>
+                    <option>Dirección</option>
+                  </select>
+                  </p>
+
+                  <input class="form-control" type="text" placeholder="Nombre del cliente">
+                  <table class="table table-responsive">
+                    <thead>
+                      <tr>
+                        <td><strong>Nombre</strong></td>
+                        <td><strong>Dirección</strong></td>
+                        <td><strong>Distrito</strong></td>
+                        <td><strong>Teléfono</strong></td>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>Juan Carlos Gonzales </td>
+                        <td>Mz F Lote 17</td>
+                        <td>Villa el Salvador</td>
+                        <td>982729118</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </form>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="table-responsive box-historial">
+            <h4>HISTORIAL:</h4>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <td><strong>Fecha</strong></td>
+                  <td><strong>Producto</strong></td>
+                  <td><strong>Precio</strong></td>
+                  <td><strong>Cantidad</strong></td>
+                  <td><strong>Monto</strong></td>
+                </tr>
+              </thead>
+              
+              <tbody>
+                <tr data-id="">
+                  <td>13/10/15</td>
+                  <td>10K</td>
+                  <td>S/. 32</td>
+                  <td></td>
+                  <td>S/. 64</td>
+                </tr>
+                <tr>
+                  <td>13/10/15</td>
+                  <td>10K</td>
+                  <td>S/. 32</td>
+                  <td></td>
+                  <td>S/. 64</td>
+                </tr>
+                <tr>
+                  <td>13/10/15</td>
+                  <td>10K</td>
+                  <td>S/. 32</td>
+                  <td>2</td>
+                  <td>S/. 64</td>
+                </tr>
+                <tr>
+                  <td>13/10/15</td>
+                  <td>10K</td>
+                  <td>S/. 32</td>
+                  <td>2</td>
+                  <td>S/. 64</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <button type="button" class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#searchDelivery">
+              Seguimiento pedido
+            </button>
+
+          </div>
+        </div> 
+      </div>
+
+      <hr>
+
+      <div class="row box-historial">
+        
+        <div class="col-md-5">
+          <h5>Lista de Productos</h5>
+          <table class="table">
+              <thead>
+                <tr>
+                  <td><strong>Nombre</strong></td>
+                  <td><strong>Precio</strong></td>
+                </tr>
+              </thead>
+              
+              <tbody class="list-products">
+                <tr>
+                  <td>10K Balon</td>
+                  <td>S/. 32</td>
+                </tr>
+                <tr>
+                  <td>10K Balon</td>
+                  <td>S/. 32</td>
+                </tr>
+                <tr>
+                  <td>10K Balon</td>
+                  <td>S/. 32</td>
+                </tr>
+                
+              </tbody>
+            </table>
+        </div>
+
+        <div class="col-md-7">
+          <h5>Productos Solicitados</h5>
+          <table class="table">
+              <thead>
+                <tr>
+                  <td><strong>Nombre</strong></td>
+                  <td><strong>Precio</strong></td>
+                  <td><strong>Monto</strong></td>
+                  <td><strong>Cantidad</strong></td>
+                </tr>
+              </thead>
+              
+              <tbody>
+                <tr>
+                  <td>10K Balon</td>
+                  <td>10K</td>
+                  <td>S/. 32</td>
+                  <td><input class="form-control" type="number"></td>
+                </tr>
+              </tbody>
+          </table>
+
+          <hr>
+
+          <div class="col-md-8">
+            <label>Vales de Promoción</label>
+            <select class="form-control">
+              <option>Vale de descuento S/.2.00</option>
+              <option></option>
+            </select>
+          </div>
+          
+          <div class="col-md-4">
+            <label>Monto Total:</label>
+            <input disabled="disabled" class="form-control" value="S/ 38.00">
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="text-center">
+        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#payBox">Pagos</button>
+      </div>
+      
+      </div>
+    </div><!-- /.container -->
+
+
+      <div class="modal fade" id="payBox" tabindex="-1" role="dialog" aria-labelledby="searchClient">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Datos del Pedidos</h4>
+            </div>
+            <div class="modal-body">
+              
+              <div class="col-md-12">
+                <p style="padding: 10px; background: red; color: #fff; border-radius: 4px; display: block">Error al verificar la cuenta</p>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Tipo de Comprobante</label>
+                  <select class="form-control">
+                    <option>Factura</option>
+                    <option>Boleta</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Forma de Pago</label>
+                  <select class="form-control">
+                    <option>Contado</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Teléfono de Referencia</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                
+                <div class="form-group">
+                  <label>Ruc:</label>
+                  <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label>Razon Social:</label>
+                  <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label>Paga con:</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <label>Observaciones:</label>
+                <textarea class="form-control"></textarea>
+              </div>
+              <p><br> *Llene todos los datos si son necesarios. </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Aplicar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.box-historial{
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.p-20{
+	padding: 20px;
+}
+.list-products tr:hover{
+	
+	background-color: #ccc;
+
+
+}

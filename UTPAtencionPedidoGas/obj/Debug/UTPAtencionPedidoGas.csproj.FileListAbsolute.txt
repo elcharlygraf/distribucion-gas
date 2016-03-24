@@ -1,0 +1,7 @@
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\UTPAtencionPedidoGas\bin\Debug\UTPAtencionPedidoGas.dll
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\UTPAtencionPedidoGas\bin\Debug\UTPAtencionPedidoGas.pdb
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\UTPAtencionPedidoGas\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\UTPAtencionPedidoGas\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\UTPAtencionPedidoGas\obj\Debug\UTPAtencionPedidoGas.csprojResolveAssemblyReference.cache
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\UTPAtencionPedidoGas\obj\Debug\UTPAtencionPedidoGas.dll
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\UTPAtencionPedidoGas\obj\Debug\UTPAtencionPedidoGas.pdb
