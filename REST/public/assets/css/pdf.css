@@ -1,0 +1,90 @@
+body {
+  position: relative;
+  width: 17.5cm;
+  height: 29.7cm;
+  margin: 0 auto;
+  color: #001028;
+  background: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+header {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.derecha {
+	text-align: right;
+}
+
+.logo {
+	border: 1px;
+}
+
+.logo img {
+	left: 0;
+	padding-top: 5px;
+	padding-left: 5px;
+	width: 80px;
+	height: 80px
+}
+
+
+.sub {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.obs {
+	position: absolute;
+	border: 1px;
+	width: 110px;
+	height: 110px;
+	padding-left: 550px
+}
+
+li {
+	text-align: justify;
+}
+
+.info {
+	width: 400px;
+	height: 100px;
+	padding-left: 130px;
+	padding-top: -80px;
+}
+
+.content {
+	padding-top: -50px
+}
+
+p {
+	text-align: justify;
+}
+table {
+	margin: auto 0
+}
+
+table.cuadro1 {
+	border:1px solid #000000;
+	width: 600px;;
+	text-align: center;
+}
+
+.cuadro1 td{
+	border:1px solid #000000;
+	padding: 10px;
+}
+
+div.tb table{
+	margin: 0 auto;
+}
+
+.tb {
+	margin-top: 0px
+}
+.centro {
+	padding-left: 50px
+}
