@@ -64,6 +64,18 @@ return [
             'strict'    => false,
         ],
 
+        'bdpedidos'  => [
+            'driver'     => 'mysql',
+            'host'       => env('PEDIDOS_HOST', 'localhost'),
+            'database'   => env('PEDIDOS_DATABASE', 'forge'),
+            'username'   => env('PEDIDOS_USERNAME', 'forge'),
+            'password'   => env('PEDIDOS_PASSWORD', ''),
+            'charset'    => 'utf8',
+            'collation'  => 'utf8_unicode_ci',
+            'prefix'     => '',
+            'strict'     => false,
+        ],
+
         'pgsql' => [
             'driver'   => 'pgsql',
             'host'     => env('DB_HOST', 'localhost'),
