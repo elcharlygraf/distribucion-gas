@@ -9,7 +9,7 @@ namespace RESTPROYECT.Persistencia
 {
     public class ClienteDAO
     {
-        public Cliente Crear(Cliente ClienteACrear)
+        public Cliente Crear(Cliente clienteACrear)
         {
             Cliente ClienteCreado = null;
             string sql = "INSERT INTO t_clientes VALUES (@telefono, @apellidos, @nombres, @direccion, @distrito)";
@@ -18,15 +18,15 @@ namespace RESTPROYECT.Persistencia
                 con.Open();
                 using (SqlCommand com = new SqlCommand(sql, con))
                 {
-                    com.Parameters.Add(new SqlParameter("@telefono", ClienteACrear.telefono));
-                    com.Parameters.Add(new SqlParameter("@apellidos", ClienteACrear.apellidos));
-                    com.Parameters.Add(new SqlParameter("@nombres", ClienteACrear.nombres));
-                    com.Parameters.Add(new SqlParameter("@direccion", ClienteACrear.direccion));
-                    com.Parameters.Add(new SqlParameter("@distrito", ClienteACrear.distrito));
+                    com.Parameters.Add(new SqlParameter("@telefono", clienteACrear.telefono));
+                    com.Parameters.Add(new SqlParameter("@apellidos", clienteACrear.apellidos));
+                    com.Parameters.Add(new SqlParameter("@nombres", clienteACrear.nombres));
+                    com.Parameters.Add(new SqlParameter("@direccion", clienteACrear.direccion));
+                    com.Parameters.Add(new SqlParameter("@distrito", clienteACrear.distrito));
                     com.ExecuteNonQuery();
                 }
             }
-            ClienteCreado = Obtener(ClienteACrear.idCliente);
+            ClienteCreado = Obtener(clienteACrear.idCliente);
             return ClienteCreado;
         }
 
@@ -59,7 +59,7 @@ namespace RESTPROYECT.Persistencia
             return ClienteEncontrado;
         }
 
-        public Cliente Modificar(Cliente ClienteAModificar)
+        public Cliente Modificar(Cliente clienteAModificar)
         {
             Cliente ClienteModificado = null;
             string sql = "UPDATE t_clientes SET telefono=@telefono, apellidos=@apellidos, nombres=@nombres, direccion=@direccion, distrito=@distrito WHERE idCliente=@idCliente";
@@ -68,19 +68,19 @@ namespace RESTPROYECT.Persistencia
                 con.Open();
                 using (SqlCommand com = new SqlCommand(sql, con))
                 {
-                    com.Parameters.Add(new SqlParameter("@telefono", ClienteAModificar.telefono));
-                    com.Parameters.Add(new SqlParameter("@apellidos", ClienteAModificar.apellidos));
-                    com.Parameters.Add(new SqlParameter("@nombres", ClienteAModificar.nombres));
-                    com.Parameters.Add(new SqlParameter("@direccion", ClienteAModificar.direccion));
-                    com.Parameters.Add(new SqlParameter("@distrito", ClienteAModificar.distrito));
+                    com.Parameters.Add(new SqlParameter("@telefono", clienteAModificar.telefono));
+                    com.Parameters.Add(new SqlParameter("@apellidos", clienteAModificar.apellidos));
+                    com.Parameters.Add(new SqlParameter("@nombres", clienteAModificar.nombres));
+                    com.Parameters.Add(new SqlParameter("@direccion", clienteAModificar.direccion));
+                    com.Parameters.Add(new SqlParameter("@distrito", clienteAModificar.distrito));
                     com.ExecuteNonQuery();
                 }
             }
-            ClienteModificado = Obtener(ClienteAModificar.idCliente);
+            ClienteModificado = Obtener(clienteAModificar.idCliente);
             return ClienteModificado;
         }
 
-        public void Eliminar(Cliente ClienteAEliminar)
+        public void Eliminar(Cliente clienteAEliminar)
         {
             string sql = "DELETE FROM t_clientes WHERE idCliente=@idCliente";
             using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
@@ -88,7 +88,7 @@ namespace RESTPROYECT.Persistencia
                 con.Open();
                 using (SqlCommand com = new SqlCommand(sql, con))
                 {
-                    com.Parameters.Add(new SqlParameter("@idCliente", ClienteAEliminar.idCliente));
+                    com.Parameters.Add(new SqlParameter("@idCliente", clienteAEliminar.idCliente));
                     com.ExecuteNonQuery();
                 }
             }

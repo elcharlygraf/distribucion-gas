@@ -4,15 +4,38 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using RESTPROYECT.Dominio;
+using RESTPROYECT.Persistencia;
 
 namespace RESTPROYECT
 {
-    // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de clase "DetallePedidos" en el código, en svc y en el archivo de configuración a la vez.
-    // NOTA: para iniciar el Cliente de prueba WCF para probar este servicio, seleccione DetallePedidos.svc o DetallePedidos.svc.cs en el Explorador de soluciones e inicie la depuración.
     public class DetallePedidos : IDetallePedidos
     {
-        public void DoWork()
+        private DetalleDetallePedidoDAO dao = new DetalleDetallePedidoDAO();
+
+        public DetallePedido CrearDetallePedido(DetallePedidos DetallePedidoACrear)
         {
+            return dao.Crear(DetallePedidoACrear);
+        }
+
+        public DetallePedido ObtenerDetallePedido(string idDetallePedido)
+        {
+            return dao.Obtener(idDetallePedido);
+        }
+
+        public DetallePedido ModificarDetallePedido(DetallePedidos DetallePedidoAModificar)
+        {
+            return dao.Modificar(DetallePedidoAModificar);
+        }
+
+        public void EliminarDetallePedido(string idDetallePedido)
+        {
+            dao.Eliminar(idDetallePedido);
+        }
+
+        public List<DetallePedido> ListarADetallePedidos()
+        {
+            return dao.listar();
         }
     }
 }

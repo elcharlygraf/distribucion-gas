@@ -4,15 +4,38 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using RESTPROYECT.Dominio;
+using RESTPROYECT.Persistencia;
 
 namespace RESTPROYECT
 {
-    // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de clase "Productos" en el código, en svc y en el archivo de configuración a la vez.
-    // NOTA: para iniciar el Cliente de prueba WCF para probar este servicio, seleccione Productos.svc o Productos.svc.cs en el Explorador de soluciones e inicie la depuración.
     public class Productos : IProductos
     {
-        public void DoWork()
+        private ProductoDAO dao = new ProductoDAO();
+
+        public Producto CrearProducto(Productos ProductoACrear)
         {
+            return dao.Crear(ProductoACrear);
+        }
+
+        public Producto ObtenerProducto(string idProducto)
+        {
+            return dao.Obtener(idProducto);
+        }
+
+        public Producto ModificarProducto(Productos ProductoAModificar)
+        {
+            return dao.Modificar(ProductoAModificar);
+        }
+
+        public void EliminarProducto(string idProducto)
+        {
+            dao.Eliminar(idProducto);
+        }
+
+        public List<Producto> ListarAProductos()
+        {
+            return dao.listar();
         }
     }
 }
