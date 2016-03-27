@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RESTPROYECT.Dominio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -7,11 +8,22 @@ using System.Text;
 
 namespace RESTPROYECT
 {
-    // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de interfaz "IDetallePedidos" en el código y en el archivo de configuración a la vez.
     [ServiceContract]
     public interface IDetallePedidos
     {
         [OperationContract]
-        void DoWork();
+        DetallePedido CrearDetallePedido(DetallePedidos DetallePedidoACrear);
+
+        [OperationContract]
+        DetallePedido ObtenerDetallePedido(string idDetallePedido);
+
+        [OperationContract]
+        DetallePedido ModificarDetallePedido(DetallePedidos DetallePedidoAModificar);
+
+        [OperationContract]
+        void EliminarDetallePedido(string idDetallePedido);
+
+        [OperationContract]
+        List<DetallePedido> ListarADetallePedidos();
     }
 }
