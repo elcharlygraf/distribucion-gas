@@ -78,7 +78,7 @@ namespace RESTPROYECT.Persistencia
             return DetallePedidoModificado;
         }
 
-        public void Eliminar(DetallePedido DetallePedidoAEliminar)
+        public void Eliminar(string idDetallePedido)
         {
             string sql = "DELETE FROM t_detallePedido WHERE idDetallePedido=@idDetallePedido";
             using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
@@ -86,7 +86,7 @@ namespace RESTPROYECT.Persistencia
                 con.Open();
                 using (SqlCommand com = new SqlCommand(sql, con))
                 {
-                    com.Parameters.Add(new SqlParameter("@idDetallePedido", DetallePedidoAEliminar.idDetallePedido));
+                    com.Parameters.Add(new SqlParameter("@idDetallePedido", idDetallePedido));
                     com.ExecuteNonQuery();
                 }
             }
