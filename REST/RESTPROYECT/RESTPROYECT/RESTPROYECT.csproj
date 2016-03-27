@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3A4A82AC-FC8F-4BE1-839F-C8F4539A4468}</ProjectGuid>
+    <ProjectGuid>{0646CBAC-F041-4F06-8FF6-631F17D47A59}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -71,6 +71,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Dominio\" />
+    <Folder Include="Persistencia\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
@@ -95,7 +97,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:1912/</IISUrl>
+          <IISUrl>http://localhost:1938/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
