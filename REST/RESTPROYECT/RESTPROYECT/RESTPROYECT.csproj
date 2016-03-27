@@ -76,7 +76,7 @@
     <Compile Include="Dominio\DetallePedido.cs" />
     <Compile Include="Dominio\Pedido.cs" />
     <Compile Include="Dominio\Producto.cs" />
-    <Compile Include="Dominio\ProductoDAO.cs" />
+    <Compile Include="Persistencia\ProductoDAO.cs" />
     <Compile Include="IClientes.cs" />
     <Compile Include="IDetallePedidos.cs" />
     <Compile Include="IPedidos.cs" />
