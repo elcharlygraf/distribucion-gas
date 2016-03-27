@@ -59,20 +59,42 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service1.svc" />
+    <Content Include="Clientes.svc" />
+    <Content Include="DetallePedidos.svc" />
+    <Content Include="Pedidos.svc" />
+    <Content Include="Productos.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Service1.svc.cs">
-      <DependentUpon>Service1.svc</DependentUpon>
+    <Compile Include="Clientes.svc.cs">
+      <DependentUpon>Clientes.svc</DependentUpon>
     </Compile>
-    <Compile Include="IService1.cs" />
+    <Compile Include="DetallePedidos.svc.cs">
+      <DependentUpon>DetallePedidos.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Dominio\Cliente.cs" />
+    <Compile Include="Dominio\DetallePedido.cs" />
+    <Compile Include="Dominio\Pedido.cs" />
+    <Compile Include="Dominio\Producto.cs" />
+    <Compile Include="Dominio\ProductoDAO.cs" />
+    <Compile Include="IClientes.cs" />
+    <Compile Include="IDetallePedidos.cs" />
+    <Compile Include="IPedidos.cs" />
+    <Compile Include="IProductos.cs" />
+    <Compile Include="Pedidos.svc.cs">
+      <DependentUpon>Pedidos.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Persistencia\ClienteDAO.cs" />
+    <Compile Include="Persistencia\ConexionUtil.cs" />
+    <Compile Include="Persistencia\DetallePedidoDAO.cs" />
+    <Compile Include="Persistencia\PedidoDAO.cs" />
+    <Compile Include="Productos.svc.cs">
+      <DependentUpon>Productos.svc</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Dominio\" />
-    <Folder Include="Persistencia\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
