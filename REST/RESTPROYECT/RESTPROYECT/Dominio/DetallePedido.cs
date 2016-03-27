@@ -10,7 +10,7 @@ namespace RESTPROYECT.Dominio
     public class DetallePedido
     {
         [DataMember]
-        public int idDetallePedido { get; set; }
+        public string idDetallePedido { get; set; }
 
         [DataMember]
         public int idPedido { get; set; }
