@@ -13,24 +13,25 @@ namespace RESTPROYECT
     {
         private DetalleDetallePedidoDAO dao = new DetalleDetallePedidoDAO();
 
-        public DetallePedido CrearDetallePedido(DetallePedidos DetallePedidoACrear)
+        public DetallePedido CrearDetallePedido(DetallePedido DetallePedidoACrear)
         {
             return dao.Crear(DetallePedidoACrear);
         }
 
-        public DetallePedido ObtenerDetallePedido(string idDetallePedido)
+        public DetallePedido ObtenerDetallePedido(string idDetallePedidotmp)
         {
+            int idDetallePedido = Int32.Parse(idDetallePedidotmp);
             return dao.Obtener(idDetallePedido);
         }
 
-        public DetallePedido ModificarDetallePedido(DetallePedidos DetallePedidoAModificar)
+        public DetallePedido ModificarDetallePedido(DetallePedido DetallePedidoAModificar)
         {
             return dao.Modificar(DetallePedidoAModificar);
         }
 
-        public void EliminarDetallePedido(string idDetallePedido)
+        public void EliminarDetallePedido(DetallePedido DetallePedidoAEliminar)
         {
-            dao.Eliminar(idDetallePedido);
+            dao.Eliminar(DetallePedidoAEliminar);
         }
 
         public List<DetallePedido> ListarADetallePedidos()

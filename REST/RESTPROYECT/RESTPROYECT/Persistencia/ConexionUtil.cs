@@ -11,7 +11,15 @@ namespace RESTPROYECT.Persistencia
         {
             get
             {
-                return "Data Source=(local);Initial Catalog=BD_PEDIDOS;Integrated Security=SSPI;";
+                return "Data Source=(local);Initial Catalog=DB_PEDIDOS;Integrated Security=SSPI;";
+            }
+        }
+
+        public static string CadenaClientes
+        {
+            get
+            {
+                return "Data Source=(local);Initial Catalog=DB_CLIENTES;Integrated Security=SSPI;";
             }
         }
     }

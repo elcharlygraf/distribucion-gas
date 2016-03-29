@@ -29,7 +29,7 @@ namespace RESTPROYECT.Persistencia
             return PedidoCreado;
         }
 
-        public Pedido Obtener(string idPedido)
+        public Pedido Obtener(int idPedido)
         {
             Pedido PedidoEncontrado = null;
             string sql = "SELECT * FROM t_pedidos WHERE idPedido=@idPedido";
@@ -93,22 +93,33 @@ namespace RESTPROYECT.Persistencia
 
         public List<Pedido> listar()
         {
-            List<Pedido> PedidosEncontrados = new List<Pedido>();
-            string sql = "Select * from t_pedidos";
-            using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
+            List<Pedido> pedidosEncontrados = new List<Pedido>();
+            Pedido PedidoEncontrado = default(Pedido);
+            string sql = "SELECT * FROM t_pedidos";
+            using (SqlConnection conexion = new SqlConnection(ConexionUtil.Cadena))
             {
-                con.Open();
-                using (SqlCommand com = new SqlCommand(sql, con))
+                conexion.Open();
+                using (SqlCommand comando = new SqlCommand(sql, conexion))
                 {
-
-                    using (SqlDataAdapter resultado = com.ExecuteReader())
+                    using (SqlDataReader resultado = comando.ExecuteReader())
                     {
+                        while (resultado.Read())
+                        {
+                            PedidoEncontrado = new Pedido()
+                            {
+                                idCliente = (int)resultado["idCliente"],
+                                montoTotal = (decimal)resultado["montoTotal"],
+                                idEstado = (int)resultado["idEstado"],
+                                fechaPedido = (string)resultado["fechaPedido"]
+                            };
+                            pedidosEncontrados.Add(PedidoEncontrado);
+                        }
                     }
                 }
-
             }
-            return PedidosEncontrados();
+            return pedidosEncontrados;
         }
+        
 
     }
 }

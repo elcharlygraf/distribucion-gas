@@ -30,11 +30,11 @@ namespace RESTPROYECT.Persistencia
             return ClienteCreado;
         }
 
-        public Cliente Obtener(string idCliente)
+        public Cliente Obtener(int idCliente)
         {
             Cliente ClienteEncontrado = null;
             string sql = "SELECT * FROM t_clientes WHERE idCliente=@idCliente";
-            using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
+            using (SqlConnection con = new SqlConnection(ConexionUtil.CadenaClientes))
             {
                 con.Open();
                 using (SqlCommand com = new SqlCommand(sql, con))
@@ -63,11 +63,12 @@ namespace RESTPROYECT.Persistencia
         {
             Cliente ClienteModificado = null;
             string sql = "UPDATE t_clientes SET telefono=@telefono, apellidos=@apellidos, nombres=@nombres, direccion=@direccion, distrito=@distrito WHERE idCliente=@idCliente";
-            using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
+            using (SqlConnection con = new SqlConnection(ConexionUtil.CadenaClientes))
             {
                 con.Open();
                 using (SqlCommand com = new SqlCommand(sql, con))
                 {
+                    //com.Parameters.Add(new SqlParameter("@idCliente", clienteAModificar.idCliente));
                     com.Parameters.Add(new SqlParameter("@telefono", clienteAModificar.telefono));
                     com.Parameters.Add(new SqlParameter("@apellidos", clienteAModificar.apellidos));
                     com.Parameters.Add(new SqlParameter("@nombres", clienteAModificar.nombres));
@@ -80,15 +81,15 @@ namespace RESTPROYECT.Persistencia
             return ClienteModificado;
         }
 
-        public void Eliminar(Cliente clienteAModificar)
+        public void Eliminar(Cliente clienteAEliminar)
         {
             string sql = "DELETE FROM t_clientes WHERE idCliente=@idCliente";
-            using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
+            using (SqlConnection con = new SqlConnection(ConexionUtil.CadenaClientes))
             {
                 con.Open();
                 using (SqlCommand com = new SqlCommand(sql, con))
                 {
-                    com.Parameters.Add(new SqlParameter("@idCliente", clienteAModificar.idCliente));
+                    com.Parameters.Add(new SqlParameter("@idCliente", clienteAEliminar.idCliente));
                     com.ExecuteNonQuery();
                 }
             }
@@ -96,21 +97,31 @@ namespace RESTPROYECT.Persistencia
 
         public List<Cliente> listar()
         {
-            List<Cliente> ClientesEncontrados = new List<Cliente>();
-            string sql = "Select * from t_clientes";
-            using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
+            List<Cliente> clientesEncontrados = new List<Cliente>();
+            Cliente clienteEncontrado = default(Cliente);
+            string sql = "SELECT * FROM t_clientes";
+            using (SqlConnection conexion = new SqlConnection(ConexionUtil.CadenaClientes))
             {
-                con.Open();
-                using (SqlCommand com = new SqlCommand(sql, con))
+                conexion.Open();
+                using (SqlCommand comando = new SqlCommand(sql, conexion))
                 {
-
-                    using (SqlDataAdapter resultado = com.ExecuteReader())
+                    using (SqlDataReader resultado = comando.ExecuteReader())
                     {
+                        while (resultado.Read())
+                        {
+                            clienteEncontrado = new Cliente()
+                            {
+                                telefono = (string)resultado["telefono"],
+                                apellidos = (string)resultado["apellidos"],
+                                nombres = (string)resultado["nombres"],
+                                distrito = (string)resultado["distrito"]
+                            };
+                            clientesEncontrados.Add(clienteEncontrado);
+                        }
                     }
                 }
-
             }
-            return ClientesEncontrados();
+            return clientesEncontrados;
         }
 
     }

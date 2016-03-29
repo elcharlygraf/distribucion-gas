@@ -13,29 +13,30 @@ namespace RESTPROYECT
     {
         private ProductoDAO dao = new ProductoDAO();
 
-        public Producto CrearProducto(Productos ProductoACrear)
+        public Producto CrearProducto(Producto ProductoACrear)
         {
             return dao.Crear(ProductoACrear);
         }
 
-        public Producto ObtenerProducto(string idProducto)
+        public Producto ObtenerProducto(string idProductotmp)
         {
+            int idProducto = Int32.Parse(idProductotmp);
             return dao.Obtener(idProducto);
         }
 
-        public Producto ModificarProducto(Productos ProductoAModificar)
+        public Producto ModificarProducto(Producto ProductoAModificar)
         {
             return dao.Modificar(ProductoAModificar);
         }
 
-        public void EliminarProducto(string idProducto)
+        public void EliminarProducto(Producto ProductoAEliminar)
         {
-            dao.Eliminar(idProducto);
+            dao.Eliminar(ProductoAEliminar);
         }
 
         public List<Producto> ListarAProductos()
         {
-            return dao.listar();
+            return dao.Listar();
         }
     }
 }

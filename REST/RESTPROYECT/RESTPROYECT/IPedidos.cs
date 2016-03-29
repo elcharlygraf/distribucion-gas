@@ -14,7 +14,7 @@ namespace RESTPROYECT
     {
         [OperationContract]
         [WebInvoke(Method = "POST", UriTemplate = "pedidos", ResponseFormat = WebMessageFormat.Json)]
-        Pedido CrearPedido(Pedidos PedidoACrear);
+        Pedido CrearPedido(Pedido PedidoACrear);
 
         [OperationContract]
         [WebInvoke(Method = "GET", UriTemplate = "pedidos/{idPedido}", ResponseFormat = WebMessageFormat.Json)]
@@ -22,11 +22,11 @@ namespace RESTPROYECT
 
         [OperationContract]
         [WebInvoke(Method = "PUT", UriTemplate = "pedidos", ResponseFormat = WebMessageFormat.Json)]
-        Pedido ModificarPedido(Pedidos PedidoAModificar);
+        Pedido ModificarPedido(Pedido PedidoAModificar);
 
         [OperationContract]
         [WebInvoke(Method = "DELETE", UriTemplate = "pedidos/{idPedido}", ResponseFormat = WebMessageFormat.Json)]
-        void EliminarPedido(string idPedido);
+        void EliminarPedido(Pedido PedidoAEliminar);
 
         [OperationContract]
         [WebInvoke(Method = "GET", UriTemplate = "pedidos", ResponseFormat = WebMessageFormat.Json)]

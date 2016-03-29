@@ -13,29 +13,31 @@ namespace RESTPROYECT
     {
         private ClienteDAO dao = new ClienteDAO();
 
-        public Cliente CrearCliente(Clientes clienteACrear)
+        public Cliente CrearCliente(Cliente clienteACrear)
         {
             return dao.Crear(clienteACrear);
         }
 
-        public Cliente ObtenerCliente(string idCliente)
+        public Cliente ObtenerCliente(string idClientetmp)
         {
+            int idCliente = Int32.Parse(idClientetmp);
             return dao.Obtener(idCliente);
         }
 
-        public Cliente ModificarCliente(Clientes clienteAModificar)
+        public Cliente ModificarCliente(Cliente clienteAModificar)
         {
             return dao.Modificar(clienteAModificar);
         }
 
-        public void EliminarCliente(string idCliente)
+        public void EliminarCliente(Cliente clienteAEliminar)
         {
-            dao.Eliminar(idCliente);
+            dao.Eliminar(clienteAEliminar);
         }
 
         public List<Cliente> ListarAClientes()
         {
             return dao.listar();
         }
+
     }
 }

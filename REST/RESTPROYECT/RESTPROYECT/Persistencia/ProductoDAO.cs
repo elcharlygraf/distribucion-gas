@@ -29,7 +29,7 @@ namespace RESTPROYECT.Dominio
             return ProductoCreado;
         }
 
-        public Producto Obtener(string idProducto)
+        public Producto Obtener(int idProducto)
         {
             Producto ProductoEncontrado = null;
             string sql = "SELECT * FROM t_productos WHERE idProducto=@idProducto";
@@ -45,7 +45,7 @@ namespace RESTPROYECT.Dominio
                         {
                             ProductoEncontrado = new Producto()
                             {
-                                idProducto  = (string)resultado["idProducto"],
+                                idProducto  = (int)resultado["idProducto"],
                                 producto    = (string)resultado["producto"],
                                 descripcion = (string)resultado["descripcion"],
                                 precio      = (decimal)resultado["precio"]
@@ -90,23 +90,34 @@ namespace RESTPROYECT.Dominio
             }
         }
 
-        public List<Producto> listar()
+        public List<Producto> Listar()
         {
-            List<Producto> ProductosEncontrados = new List<Producto>();
-            string sql = "Select * from t_productos";
-            using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
+            List<Producto> productosEncontrados = new List<Producto>();
+            Producto productoEncontrado = default(Producto);
+            string sql = "SELECT * FROM t_productos";
+            using (SqlConnection conexion = new SqlConnection(ConexionUtil.Cadena))
             {
-                con.Open();
-                using (SqlCommand com = new SqlCommand(sql, con)) {
-
-                    using (SqlDataAdapter resultado = com.ExecuteReader())
+                conexion.Open();
+                using (SqlCommand comando = new SqlCommand(sql, conexion))
+                {
+                    using (SqlDataReader resultado = comando.ExecuteReader())
                     {
+                        while (resultado.Read())
+                        {
+                            productoEncontrado = new Producto()
+                            {
+                                idProducto = (int)resultado["idProducto"],
+                                producto = (string)resultado["producto"],
+                                descripcion = (string)resultado["descripcion"],
+                                precio = (decimal)resultado["precio"]
+                            };
+                            productosEncontrados.Add(productoEncontrado);
+                        }
                     }
                 }
-                
             }
-            return ProductosEncontrados();
+            return productosEncontrados;
+
         }
-        
     }
 }

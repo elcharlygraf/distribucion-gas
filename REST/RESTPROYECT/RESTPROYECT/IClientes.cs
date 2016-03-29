@@ -13,23 +13,23 @@ namespace RESTPROYECT
     public interface IClientes
     {
         [OperationContract]
-        [WebInvoke(Method = "POST", UriTemplate = "clientes", ResponseFormat = WebMessageFormat.Json)]
-        Cliente CrearCliente(Clientes clienteACrear);
-
+        [WebInvoke(Method = "POST", UriTemplate = "Clientes", ResponseFormat = WebMessageFormat.Json)]
+        Cliente CrearCliente(Cliente clienteACrear);
+        
         [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "clientes/{idCliente}", ResponseFormat = WebMessageFormat.Json)]
+        [WebInvoke(Method = "GET", UriTemplate = "Clientes/{idCliente}", ResponseFormat = WebMessageFormat.Json)]
         Cliente ObtenerCliente(string idCliente);
 
         [OperationContract]
-        [WebInvoke(Method = "PUT", UriTemplate = "clientes", ResponseFormat = WebMessageFormat.Json)]
-        Cliente ModificarCliente(Clientes clienteAModificar);
+        [WebInvoke(Method = "PUT", UriTemplate = "Clientes", ResponseFormat = WebMessageFormat.Json)]
+        Cliente ModificarCliente(Cliente clienteAModificar);
 
         [OperationContract]
-        [WebInvoke(Method = "DELETE", UriTemplate = "clientes/{idCliente}", ResponseFormat = WebMessageFormat.Json)]
-        void EliminarCliente(string idCliente);
+        [WebInvoke(Method = "DELETE", UriTemplate = "Clientes/{idCliente}", ResponseFormat = WebMessageFormat.Json)]
+        void EliminarCliente(Cliente clienteAEliminar);
 
         [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "clientes", ResponseFormat = WebMessageFormat.Json)]
+        [WebInvoke(Method = "GET", UriTemplate = "Clientes", ResponseFormat = WebMessageFormat.Json)]
         List<Cliente> ListarAClientes();
     }
 }

@@ -29,7 +29,7 @@ namespace RESTPROYECT.Persistencia
             return DetallePedidoCreado;
         }
 
-        public DetallePedido Obtener(string idDetallePedido)
+        public DetallePedido Obtener(int idDetallePedido)
         {
             DetallePedido DetallePedidoEncontrado = null;
             string sql = "SELECT * FROM t_detallePedido WHERE idDetallePedido=@idDetallePedido";
@@ -78,7 +78,7 @@ namespace RESTPROYECT.Persistencia
             return DetallePedidoModificado;
         }
 
-        public void Eliminar(string idDetallePedido)
+        public void Eliminar(DetallePedido DetallePedidoAEliminar)
         {
             string sql = "DELETE FROM t_detallePedido WHERE idDetallePedido=@idDetallePedido";
             using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
@@ -86,7 +86,7 @@ namespace RESTPROYECT.Persistencia
                 con.Open();
                 using (SqlCommand com = new SqlCommand(sql, con))
                 {
-                    com.Parameters.Add(new SqlParameter("@idDetallePedido", idDetallePedido));
+                    com.Parameters.Add(new SqlParameter("@idDetallePedido", DetallePedidoAEliminar.idDetallePedido));
                     com.ExecuteNonQuery();
                 }
             }
@@ -95,20 +95,30 @@ namespace RESTPROYECT.Persistencia
         public List<DetallePedido> listar()
         {
             List<DetallePedido> DetallePedidosEncontrados = new List<DetallePedido>();
-            string sql = "Select * from t_detallePedido";
-            using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
+            DetallePedido DetallePedidosEncontrado = default(DetallePedido);
+            string sql = "SELECT * FROM t_clientes";
+            using (SqlConnection conexion = new SqlConnection(ConexionUtil.Cadena))
             {
-                con.Open();
-                using (SqlCommand com = new SqlCommand(sql, con))
+                conexion.Open();
+                using (SqlCommand comando = new SqlCommand(sql, conexion))
                 {
-
-                    using (SqlDataAdapter resultado = com.ExecuteReader())
+                    using (SqlDataReader resultado = comando.ExecuteReader())
                     {
+                        while (resultado.Read())
+                        {
+                            DetallePedidosEncontrado = new DetallePedido()
+                            {
+                                idPedido = (int)resultado["idPedido"],
+                                idProducto = (int)resultado["idProducto"],
+                                cantidad = (int)resultado["cantidad"],
+                                precioUnitario = (decimal)resultado["precioUnitario"]
+                            };
+                            DetallePedidosEncontrados.Add(DetallePedidosEncontrado);
+                        }
                     }
                 }
-
             }
-            return DetallePedidosEncontrados();
+            return DetallePedidosEncontrados;
         }
 
     }
