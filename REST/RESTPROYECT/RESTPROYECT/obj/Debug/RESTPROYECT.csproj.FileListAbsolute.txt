@@ -5,3 +5,9 @@ C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\Vigente\
 C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\Vigente\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\bin\RESTPROYECT.pdb
 C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\Vigente\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.dll
 C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\Vigente\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.pdb
+C:\dd\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\bin\RESTPROYECT.dll.config
+C:\dd\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\bin\RESTPROYECT.dll
+C:\dd\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\bin\RESTPROYECT.pdb
+C:\dd\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.csprojResolveAssemblyReference.cache
+C:\dd\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.dll
+C:\dd\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.pdb

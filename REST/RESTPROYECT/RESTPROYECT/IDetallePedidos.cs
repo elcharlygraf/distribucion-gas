@@ -25,7 +25,7 @@ namespace RESTPROYECT
         DetallePedido ModificarDetallePedido(DetallePedido DetallePedidoAModificar);
 
         [OperationContract]
-        [WebInvoke(Method = "DELETE", UriTemplate = "detalle/pedidos/{idDetallePedido}", ResponseFormat = WebMessageFormat.Json)]
+        [WebInvoke(Method = "DELETE", UriTemplate = "detalle/pedidos", ResponseFormat = WebMessageFormat.Json)]
         void EliminarDetallePedido(DetallePedido DetallePedidoAEliminar);
 
         [OperationContract]

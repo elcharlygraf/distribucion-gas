@@ -1,1 +1,7 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="RESTPROYECT.Clientes" CodeBehind="Clientes.svc.cs" %>
+﻿<%@ ServiceHost 
+    Language="C#" 
+    Debug="true" 
+    Service="RESTPROYECT.Clientes" 
+    CodeBehind="Clientes.svc.cs" 
+    Factory="System.ServiceModel.Activation.WebServiceHostFactory"
+    %>

@@ -25,7 +25,7 @@ namespace RESTPROYECT
         Producto ModificarProducto(Producto ProductoAModificar);
 
         [OperationContract]
-        [WebInvoke(Method = "DELETE", UriTemplate = "productos/{idProducto}", ResponseFormat = WebMessageFormat.Json)]
+        [WebInvoke(Method = "DELETE", UriTemplate = "productos", ResponseFormat = WebMessageFormat.Json)]
         void EliminarProducto(Producto ProductoAEliminar);
 
         [OperationContract]

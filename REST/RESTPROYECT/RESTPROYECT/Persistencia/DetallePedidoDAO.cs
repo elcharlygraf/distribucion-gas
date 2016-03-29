@@ -96,7 +96,8 @@ namespace RESTPROYECT.Persistencia
         {
             List<DetallePedido> DetallePedidosEncontrados = new List<DetallePedido>();
             DetallePedido DetallePedidosEncontrado = default(DetallePedido);
-            string sql = "SELECT * FROM t_clientes";
+            string sql = "SELECT * FROM t_detallePedido";
+            //string sql = "select t1.idDetallePedido, t1.idPedido, t2.producto, t1.cantidad, t1.precioUnitario from t_detallePedido t1, t_productos t2 where t1.idProducto = t2.idProducto";
             using (SqlConnection conexion = new SqlConnection(ConexionUtil.Cadena))
             {
                 conexion.Open();

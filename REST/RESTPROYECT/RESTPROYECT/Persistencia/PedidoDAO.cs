@@ -48,7 +48,7 @@ namespace RESTPROYECT.Persistencia
                                 idCliente = (int)resultado["idCliente"],
                                 montoTotal = (decimal)resultado["montoTotal"],
                                 idEstado = (int)resultado["idEstado"],
-                                fechaPedido = (string)resultado["fechaPedido"]
+                                fechaPedido = (DateTime)resultado["fechaPedido"]
                             };
                         }
                     }
@@ -110,7 +110,7 @@ namespace RESTPROYECT.Persistencia
                                 idCliente = (int)resultado["idCliente"],
                                 montoTotal = (decimal)resultado["montoTotal"],
                                 idEstado = (int)resultado["idEstado"],
-                                fechaPedido = (string)resultado["fechaPedido"]
+                                fechaPedido = (DateTime)resultado["fechaPedido"]
                             };
                             pedidosEncontrados.Add(PedidoEncontrado);
                         }

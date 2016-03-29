@@ -25,7 +25,7 @@ namespace RESTPROYECT
         Cliente ModificarCliente(Cliente clienteAModificar);
 
         [OperationContract]
-        [WebInvoke(Method = "DELETE", UriTemplate = "Clientes/{idCliente}", ResponseFormat = WebMessageFormat.Json)]
+        [WebInvoke(Method = "DELETE", UriTemplate = "Clientes", ResponseFormat = WebMessageFormat.Json)]
         void EliminarCliente(Cliente clienteAEliminar);
 
         [OperationContract]
