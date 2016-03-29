@@ -22,7 +22,7 @@ namespace RESTPROYECT.Dominio
         public int idEstado { get; set; }
 
         [DataMember]
-        public string fechaPedido { get; set; }
+        public DateTime fechaPedido { get; set; }
 
     }
 }
