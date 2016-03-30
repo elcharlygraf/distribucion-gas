@@ -11,3 +11,9 @@ C:\dd\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\bin\RESTPROYECT.pdb
 C:\dd\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.csprojResolveAssemblyReference.cache
 C:\dd\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.dll
 C:\dd\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.pdb
+C:\Mis documentos\ProyectoDSD\REST\RESTPROYECT\RESTPROYECT\bin\RESTPROYECT.dll.config
+C:\Mis documentos\ProyectoDSD\REST\RESTPROYECT\RESTPROYECT\bin\RESTPROYECT.dll
+C:\Mis documentos\ProyectoDSD\REST\RESTPROYECT\RESTPROYECT\bin\RESTPROYECT.pdb
+C:\Mis documentos\ProyectoDSD\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.csprojResolveAssemblyReference.cache
+C:\Mis documentos\ProyectoDSD\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.dll
+C:\Mis documentos\ProyectoDSD\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.pdb

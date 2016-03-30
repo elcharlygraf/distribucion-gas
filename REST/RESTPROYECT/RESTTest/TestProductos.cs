@@ -31,7 +31,23 @@ namespace RESTTest
             Producto productoCreado = js.Deserialize<Producto>(postdata);
             Assert.AreEqual("aaaaaaa", productoCreado.producto);
             Assert.AreEqual("qqqqqqqq", productoCreado.descripcion);
-            Assert.AreEqual(1111, productoCreado.precio);            
+            Assert.AreEqual(1111, productoCreado.precio);
+        }
+
+        [TestMethod]
+        public void TestObtenerProducto()
+        {
+            HttpWebRequest req2 = (HttpWebRequest)WebRequest.
+                Create("http://localhost:1938/Productos.svc/Productos/1");
+            req2.Method = "GET";
+            HttpWebResponse res2 = (HttpWebResponse)req2.GetResponse();
+            StreamReader reader2 = new StreamReader(res2.GetResponseStream());
+            string productoJson2 = reader2.ReadToEnd();
+            JavaScriptSerializer js2 = new JavaScriptSerializer();
+            Producto productoObtenido = js2.Deserialize<Producto>(productoJson2);
+            Assert.AreEqual("5K", productoObtenido.producto);
+            Assert.AreEqual("BALON DE 5 KILOS", productoObtenido.descripcion);
+            Assert.AreEqual(21, productoObtenido.precio);
         }
 
         
