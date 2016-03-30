@@ -6,6 +6,8 @@ using System.ServiceModel;
 using System.Text;
 using RESTPROYECT.Dominio;
 using RESTPROYECT.Persistencia;
+using System.ServiceModel.Web;
+using System.Net;
 
 namespace RESTPROYECT
 {
@@ -15,6 +17,10 @@ namespace RESTPROYECT
 
         public Producto CrearProducto(Producto ProductoACrear)
         {
+            if (dao.Equals(ProductoACrear.producto))
+            {
+                throw new WebFaultException<string>("Producto imposible", HttpStatusCode.InternalServerError);
+            }
             return dao.Crear(ProductoACrear);
         }
 
