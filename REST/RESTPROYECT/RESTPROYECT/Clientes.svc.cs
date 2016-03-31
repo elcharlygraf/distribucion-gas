@@ -6,6 +6,8 @@ using System.ServiceModel;
 using System.Text;
 using RESTPROYECT.Dominio;
 using RESTPROYECT.Persistencia;
+using System.ServiceModel.Web;
+using System.Net;
 
 namespace RESTPROYECT
 {
@@ -13,8 +15,15 @@ namespace RESTPROYECT
     {
         private ClienteDAO dao = new ClienteDAO();
 
-        public Cliente CrearCliente(Cliente clienteACrear)
-        {
+        public Cliente CrearCliente(Cliente clienteACrear){
+        
+            Cliente clienteObtenido = dao.Obtener(clienteACrear.telefono);
+
+            if (clienteObtenido != null)
+            {
+                throw new WebFaultException<string>(
+                    "El cliente con el # de telefono " + clienteACrear.telefono + " ya existe!", HttpStatusCode.InternalServerError);
+            }
             return dao.Crear(clienteACrear);
         }
 

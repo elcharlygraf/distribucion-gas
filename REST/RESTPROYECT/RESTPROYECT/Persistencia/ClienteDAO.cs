@@ -59,6 +59,36 @@ namespace RESTPROYECT.Persistencia
             return ClienteEncontrado;
         }
 
+        public Cliente Obtener(string telefono)
+        {
+            Cliente ClienteEncontrado = null;
+            string sql = "SELECT * FROM t_clientes WHERE telefono=@telefono";
+            using (SqlConnection con = new SqlConnection(ConexionUtil.CadenaClientes))
+            {
+                con.Open();
+                using (SqlCommand com = new SqlCommand(sql, con))
+                {
+                    com.Parameters.Add(new SqlParameter("@telefono", telefono));
+                    using (SqlDataReader resultado = com.ExecuteReader())
+                    {
+                        if (resultado.Read())
+                        {
+                            ClienteEncontrado = new Cliente()
+                            {
+                                idCliente = (int)resultado["idCliente"],
+                                telefono = (string)resultado["telefono"],
+                                apellidos = (string)resultado["apellidos"],
+                                nombres = (string)resultado["nombres"],
+                                direccion = (string)resultado["direccion"],
+                                distrito = (string)resultado["distrito"]
+                            };
+                        }
+                    }
+                }
+            }
+            return ClienteEncontrado;
+        }
+
         public Cliente Modificar(Cliente clienteAModificar)
         {
             Cliente ClienteModificado = null;
