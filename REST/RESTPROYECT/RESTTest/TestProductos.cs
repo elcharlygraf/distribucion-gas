@@ -35,6 +35,43 @@ namespace RESTTest
         }
 
         [TestMethod]
+        public void TestCrearProductosException()
+        {
+            string postdata = "{\"producto\":\"aaaaaaa\",\"descripcion\":\"qqqqqqqq\",\"precio\":1111}";
+            byte[] data = Encoding.UTF8.GetBytes(postdata);
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://localhost:1938/Productos.svc/Productos");
+            req.Method = "POST";
+            req.ContentLength = data.Length;
+            req.ContentType = "application/json";
+            var reqStream = req.GetRequestStream();
+            reqStream.Write(data, 0, data.Length);
+            HttpWebResponse res = null;
+            try
+            {
+                res = (HttpWebResponse)req.GetResponse();
+                StreamReader reader = new StreamReader(res.GetResponseStream());
+                string productoJson = reader.ReadToEnd();
+                JavaScriptSerializer js = new JavaScriptSerializer();
+                Producto productoCreado = js.Deserialize<Producto>(postdata);
+                Assert.AreEqual("aaaaaaa", productoCreado.producto);
+                Assert.AreEqual("qqqqqqqq", productoCreado.descripcion);
+                Assert.AreEqual(1111, productoCreado.precio);
+            }
+            catch (WebException w)
+            {
+                HttpStatusCode code = ((HttpWebResponse)w.Response).StatusCode;
+                String mensaje = ((HttpWebResponse)w.Response).StatusDescription;
+                StreamReader sr = new StreamReader(w.Response.GetResponseStream());
+                string error = sr.ReadToEnd();
+                JavaScriptSerializer js = new JavaScriptSerializer();
+                string mensajeException = js.Deserialize<string>(error);
+                Assert.AreEqual("El producto: aaaaaaa no se puede ingresar porque ya existe!", mensajeException);
+
+            }
+
+           
+        }
+        [TestMethod]
         public void TestObtenerProducto()
         {
             HttpWebRequest req2 = (HttpWebRequest)WebRequest.

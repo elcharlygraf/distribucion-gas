@@ -57,6 +57,36 @@ namespace RESTPROYECT.Dominio
             return ProductoEncontrado;
         }
 
+        public Producto Obtener(string descProducto)
+        {
+            Producto ProductoEncontrado = null;
+            string sql = "SELECT * FROM t_productos WHERE producto=@producto";
+            using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
+            {
+                con.Open();
+                using (SqlCommand com = new SqlCommand(sql, con))
+                {
+                    com.Parameters.Add(new SqlParameter("@producto", descProducto));
+                    using (SqlDataReader resultado = com.ExecuteReader())
+                    {
+                        if (resultado.Read())
+                        {
+                            ProductoEncontrado = new Producto()
+                            {
+                                idProducto = (int)resultado["idProducto"],
+                                producto = (string)resultado["producto"],
+                                descripcion = (string)resultado["descripcion"],
+                                precio = (decimal)resultado["precio"]
+                            };
+                        }
+                    }
+                }
+            }
+            return ProductoEncontrado;
+        }
+
+
+
         public Producto Modificar(Producto ProductoAModificar)
         {
             Producto ProductoModificado = null;

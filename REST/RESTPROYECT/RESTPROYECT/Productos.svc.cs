@@ -15,13 +15,16 @@ namespace RESTPROYECT
     {
         private ProductoDAO dao = new ProductoDAO();
 
-        public Producto CrearProducto(Producto ProductoACrear)
+        public Producto CrearProducto(Producto productoACrear)
         {
-            if (dao.Equals(ProductoACrear.producto))
+            Producto productoObtenido = dao.Obtener(productoACrear.producto);
+
+            if (productoObtenido != null)
             {
-                throw new WebFaultException<string>("Producto imposible", HttpStatusCode.InternalServerError);
+                throw new WebFaultException<string>(
+                    "El producto: " + productoACrear.producto.Trim() + " no se puede ingresar porque ya existe!", HttpStatusCode.InternalServerError);
             }
-            return dao.Crear(ProductoACrear);
+            return dao.Crear(productoACrear);
         }
 
         public Producto ObtenerProducto(string idProductotmp)
