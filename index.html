@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -157,121 +156,124 @@
               </div>
             </div>
           </div>
+            
+            <!--SEGUIMIENTO DE CLIENTE-->
+            <div class="modal fade" id="searchDelivery" tabindex="-1" role="dialog" aria-labelledby="searchDelivery">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Seguimiento de Pedidos</h4>
+                    </div>
+                    <div class="modal-body">
+                      
+                      <div class="form-group">
+                        <div class="col-md-6"><label>Fecha de Pedido:</label>
+                          <input class="form-control" type="text">
+                        </div>
+                        <div class="col-md-6"><label>Fecha de Entrega:</label>
+                          <input class="form-control" type="text">
+                        </div>
+                      </div>
 
-          <div class="modal fade" id="searchDelivery" tabindex="-1" role="dialog" aria-labelledby="searchDelivery">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel">Seguimiento de Pedidos</h4>
+                      <div class="form-group">                    
+                        <div class="col-sm-12">
+                          <label>Clientes:</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <div class="col-sm-5">
+                          <label>Distrito:</label>
+                          <select class="form-control">
+                            <option>San Borja</option>
+                          </select>
+                        </div>  
+                        <div class="col-sm-7">
+                          <label>Dirección:</label>
+                          <input type="text" class="form-control">
+                        </div>  
+                      </div>
+
+                      <div class="form-group">
+                        <table class="table table-responsive">
+                          <thead>
+                            <tr>
+                              <td><strong>Fecha</strong></td>
+                              <td><strong>Evento</strong></td>
+                              <td><strong>Distribuidor</strong></td>
+                              <td><strong>Observaciones</strong></td>
+                            </tr>
+                          </thead>
+
+                          <tbody>
+                            <tr>
+                              <td>13/10/2015</td>
+                              <td>Registrado pendiente</td>
+                              <td>Venta directa</td>
+                              <td>-</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
                 </div>
-                <div class="modal-body">
-                  
-                  <div class="form-group">
-                    <div class="col-md-6"><label>Fecha de Pedido:</label>
-                      <input class="form-control" type="text">
-                    </div>
-                    <div class="col-md-6"><label>Fecha de Entrega:</label>
-                      <input class="form-control" type="text">
-                    </div>
-                  </div>
+            </div>
+            <!--SEGUIMIENTO DE CLIENTE-->
 
-                  <div class="form-group">                    
-                    <div class="col-sm-12">
-                      <label>Clientes:</label>
-                      <input type="text" class="form-control">
+            <!--BUSQUEDA DE CLIENTE-->
+            <div class="modal fade" id="searchClient" tabindex="-1" role="dialog" aria-labelledby="searchClient">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Busqueda de Clientes</h4>
                     </div>
-                  </div>
-
-                  <div class="form-group">
-                    <div class="col-sm-5">
-                      <label>Distrito:</label>
+                    <div class="modal-body">
+                      <p>
+                      <label>Buscar por:</label>
                       <select class="form-control">
-                        <option>San Borja</option>
+                        <option>Teléfono</option>
+                        <option>Nombre/Razón Social</option>
+                        <option>Dirección</option>
                       </select>
-                    </div>  
-                    <div class="col-sm-7">
-                      <label>Dirección:</label>
-                      <input type="text" class="form-control">
-                    </div>  
+                      </p>
+
+                      <input class="form-control" type="text" placeholder="Nombre del cliente">
+                      <table class="table table-responsive">
+                        <thead>
+                          <tr>
+                            <td><strong>Nombre</strong></td>
+                            <td><strong>Dirección</strong></td>
+                            <td><strong>Distrito</strong></td>
+                            <td><strong>Teléfono</strong></td>
+                          </tr>
+                        </thead>
+
+                        <tbody id="contenido">
+                          <tr>
+                            <td>Juan Carlos Gonzales </td>
+                            <td>Mz F Lote 17</td>
+                            <td>Villa el Salvador</td>
+                            <td>982729118</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
                   </div>
-
-                  <div class="form-group">
-                    <table class="table table-responsive">
-                      <thead>
-                        <tr>
-                          <td><strong>Fecha</strong></td>
-                          <td><strong>Evento</strong></td>
-                          <td><strong>Distribuidor</strong></td>
-                          <td><strong>Observaciones</strong></td>
-                        </tr>
-                      </thead>
-
-                      <tbody>
-                        <tr>
-                          <td>13/10/2015</td>
-                          <td>Registrado pendiente</td>
-                          <td>Venta directa</td>
-                          <td>-</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
             </div>
-          </div>
-
-          <div class="modal fade" id="searchClient" tabindex="-1" role="dialog" aria-labelledby="searchClient">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel">Busqueda de Clientes</h4>
-                </div>
-                <div class="modal-body">
-                  <p>
-                  <label>Buscar por:</label>
-                  <select class="form-control">
-                    <option>Teléfono</option>
-                    <option>Nombre/Razón Social</option>
-                    <option>Dirección</option>
-                  </select>
-                  </p>
-
-                  <input class="form-control" type="text" placeholder="Nombre del cliente">
-                  <table class="table table-responsive">
-                    <thead>
-                      <tr>
-                        <td><strong>Nombre</strong></td>
-                        <td><strong>Dirección</strong></td>
-                        <td><strong>Distrito</strong></td>
-                        <td><strong>Teléfono</strong></td>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-                      <tr>
-                        <td>Juan Carlos Gonzales </td>
-                        <td>Mz F Lote 17</td>
-                        <td>Villa el Salvador</td>
-                        <td>982729118</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                  <button type="button" class="btn btn-primary">Guardar</button>
-                </div>
-              </div>
-            </div>
-          </div>
+            <!--BUSQUEDA DE CLIENTE-->
 
           </form>
         </div>
@@ -486,4 +488,27 @@
     <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
+
+<script>
+$(document).ready(function(){
+    $.ajax({
+        url: "http://localhost:1938/Clientes.svc/clientes",
+        //data: "parametro=si&", 
+        type: "GET",
+        contentType: "application/x-www-form-urlencoded",
+        dataType: "json",  
+        success: function(data){
+
+            $("#contenido").html('');
+            $.each(data, function(index, value){
+                
+                var block = "<tr><td>" + value.apellidos + value.nombres + "</td><td>" + value.direccion + "</td><td>" + value.distrito + "</td><td>" + value.telefono + "</td></tr>";                   
+                $("#contenido").append(block);
+                
+            });
+        }
+    });
+
+});  
+</script>  
 </html>
