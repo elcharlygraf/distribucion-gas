@@ -1,0 +1,12 @@
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\bin\Debug\RESTTest.dll
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\bin\Debug\RESTTest.pdb
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\bin\Debug\mscorlib.dll
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\bin\Debug\es\mscorlib.resources.dll
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\bin\Debug\normidna.nlp
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\bin\Debug\normnfc.nlp
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\bin\Debug\normnfd.nlp
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\bin\Debug\normnfkc.nlp
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\bin\Debug\normnfkd.nlp
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\obj\Debug\RESTTest.csprojResolveAssemblyReference.cache
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\obj\Debug\RESTTest.dll
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\obj\Debug\RESTTest.pdb

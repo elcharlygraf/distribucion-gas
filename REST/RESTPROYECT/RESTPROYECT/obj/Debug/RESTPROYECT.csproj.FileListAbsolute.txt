@@ -17,3 +17,8 @@ C:\Mis documentos\ProyectoDSD\REST\RESTPROYECT\RESTPROYECT\bin\RESTPROYECT.pdb
 C:\Mis documentos\ProyectoDSD\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.csprojResolveAssemblyReference.cache
 C:\Mis documentos\ProyectoDSD\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.dll
 C:\Mis documentos\ProyectoDSD\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.pdb
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\bin\RESTPROYECT.dll
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\bin\RESTPROYECT.pdb
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.csprojResolveAssemblyReference.cache
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.dll
+C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.pdb
