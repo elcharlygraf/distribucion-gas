@@ -75,6 +75,55 @@ namespace RESTPROYECT.Persistencia
                         {
                             ClienteEncontrado = new Cliente()
                             {
+                                telefono = (string)resultado["telefono"],
+                                apellidos = (string)resultado["apellidos"],
+                                nombres = (string)resultado["nombres"],
+                                direccion = (string)resultado["direccion"],
+                                distrito = (string)resultado["distrito"]
+                            };
+                        }
+                    }
+                }
+            }
+            return ClienteEncontrado;
+        }
+
+        public Cliente Buscar(string tipo, string var)
+        {
+            Cliente ClienteEncontrado = null;
+            string sql = null;
+
+            if (tipo == "t")
+            {
+                sql = "SELECT * FROM t_clientes WHERE telefono=@var";
+            }
+            else
+            {
+                if (tipo == "n")
+                {
+                    sql = "SELECT * FROM t_clientes WHERE nombres like '%" + @var + "%'";
+                }
+                else
+                {
+                    if (tipo == "d")
+                    {
+                        sql = "SELECT * FROM t_clientes WHERE direccion like '%" + @var + "%'";
+                    }
+                }
+            }
+            
+            using (SqlConnection con = new SqlConnection(ConexionUtil.CadenaClientes))
+            {
+                con.Open();
+                using (SqlCommand com = new SqlCommand(sql, con))
+                {
+                    com.Parameters.Add(new SqlParameter("@var", var));
+                    using (SqlDataReader resultado = com.ExecuteReader())
+                    {
+                        if (resultado.Read())
+                        {
+                            ClienteEncontrado = new Cliente()
+                            {
                                 idCliente = (int)resultado["idCliente"],
                                 telefono = (string)resultado["telefono"],
                                 apellidos = (string)resultado["apellidos"],

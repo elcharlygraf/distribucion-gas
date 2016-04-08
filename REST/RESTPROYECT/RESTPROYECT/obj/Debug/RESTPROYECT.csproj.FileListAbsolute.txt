@@ -22,3 +22,9 @@ C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\bin\REST
 C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.csprojResolveAssemblyReference.cache
 C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.dll
 C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.pdb
+C:\DSD\REST\RESTPROYECT\RESTPROYECT\bin\RESTPROYECT.dll.config
+C:\DSD\REST\RESTPROYECT\RESTPROYECT\bin\RESTPROYECT.dll
+C:\DSD\REST\RESTPROYECT\RESTPROYECT\bin\RESTPROYECT.pdb
+C:\DSD\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.csprojResolveAssemblyReference.cache
+C:\DSD\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.dll
+C:\DSD\REST\RESTPROYECT\RESTPROYECT\obj\Debug\RESTPROYECT.pdb

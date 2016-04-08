@@ -21,6 +21,10 @@ namespace RESTPROYECT
         Cliente ObtenerCliente(string idCliente);
 
         [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "Clientes/{tipo}/{var}", ResponseFormat = WebMessageFormat.Json)]
+        Cliente BuscarCliente(string tipo, string var);
+
+        [OperationContract]
         [WebInvoke(Method = "PUT", UriTemplate = "Clientes", ResponseFormat = WebMessageFormat.Json)]
         Cliente ModificarCliente(Cliente clienteAModificar);
 

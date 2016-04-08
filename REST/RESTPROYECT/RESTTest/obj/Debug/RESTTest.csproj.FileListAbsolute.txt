@@ -10,3 +10,9 @@ C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\bin\Debug\n
 C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\obj\Debug\RESTTest.csprojResolveAssemblyReference.cache
 C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\obj\Debug\RESTTest.dll
 C:\xampp\htdocs\nuevorest\distribucion-gas\REST\RESTPROYECT\RESTTest\obj\Debug\RESTTest.pdb
+C:\DSD\REST\RESTPROYECT\RESTTest\bin\Debug\RESTTest.dll
+C:\DSD\REST\RESTPROYECT\RESTTest\bin\Debug\RESTTest.pdb
+C:\DSD\REST\RESTPROYECT\RESTTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\DSD\REST\RESTPROYECT\RESTTest\obj\Debug\RESTTest.csprojResolveAssemblyReference.cache
+C:\DSD\REST\RESTPROYECT\RESTTest\obj\Debug\RESTTest.dll
+C:\DSD\REST\RESTPROYECT\RESTTest\obj\Debug\RESTTest.pdb

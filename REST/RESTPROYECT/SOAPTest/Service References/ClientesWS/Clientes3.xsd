@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:64013/Clientes.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SOAPPROJECT.Dominio" />
+  <xs:element name="CrearCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SOAPPROJECT.Dominio" minOccurs="0" name="clienteACrear" nillable="true" type="q1:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SOAPPROJECT.Dominio" minOccurs="0" name="CrearClienteResult" nillable="true" type="q2:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="telefono" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SOAPPROJECT.Dominio" minOccurs="0" name="ObtenerClienteResult" nillable="true" type="q3:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerDatosCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tipo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="var" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerDatosClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SOAPPROJECT.Dominio" minOccurs="0" name="ObtenerDatosClienteResult" nillable="true" type="q4:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/SOAPPROJECT.Dominio" minOccurs="0" name="clienteAModificar" nillable="true" type="q5:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/SOAPPROJECT.Dominio" minOccurs="0" name="ModificarClienteResult" nillable="true" type="q6:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="teelfono" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarClienteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarClientes">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarClientesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/SOAPPROJECT.Dominio" minOccurs="0" name="ListarClientesResult" nillable="true" type="q7:ArrayOfCliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
