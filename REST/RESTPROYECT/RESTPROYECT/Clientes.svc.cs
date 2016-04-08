@@ -33,7 +33,7 @@ namespace RESTPROYECT
             return dao.Obtener(idCliente);
         }
 
-        public Cliente BuscarCliente(string tipo, string var)
+        public List<Cliente> BuscarCliente(string tipo, string var)
         {            
             return dao.Buscar(tipo, var);
         }

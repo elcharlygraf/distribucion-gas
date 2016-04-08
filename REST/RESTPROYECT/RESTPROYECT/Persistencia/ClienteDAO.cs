@@ -88,9 +88,10 @@ namespace RESTPROYECT.Persistencia
             return ClienteEncontrado;
         }
 
-        public Cliente Buscar(string tipo, string var)
+        public List<Cliente> Buscar(string tipo, string var)
         {
-            Cliente ClienteEncontrado = null;
+            List<Cliente> clientesEncontrados = new List<Cliente>();
+            Cliente clienteEncontrado = null;
             string sql = null;
 
             if (tipo == "t")
@@ -120,9 +121,9 @@ namespace RESTPROYECT.Persistencia
                     com.Parameters.Add(new SqlParameter("@var", var));
                     using (SqlDataReader resultado = com.ExecuteReader())
                     {
-                        if (resultado.Read())
+                        while (resultado.Read())
                         {
-                            ClienteEncontrado = new Cliente()
+                            clienteEncontrado = new Cliente()
                             {
                                 idCliente = (int)resultado["idCliente"],
                                 telefono = (string)resultado["telefono"],
@@ -131,11 +132,12 @@ namespace RESTPROYECT.Persistencia
                                 direccion = (string)resultado["direccion"],
                                 distrito = (string)resultado["distrito"]
                             };
+                            clientesEncontrados.Add(clienteEncontrado);
                         }
                     }
                 }
             }
-            return ClienteEncontrado;
+            return clientesEncontrados;
         }
 
         public Cliente Modificar(Cliente clienteAModificar)

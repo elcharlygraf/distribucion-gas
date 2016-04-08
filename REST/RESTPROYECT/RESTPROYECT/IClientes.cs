@@ -22,7 +22,7 @@ namespace RESTPROYECT
 
         [OperationContract]
         [WebInvoke(Method = "GET", UriTemplate = "Clientes/{tipo}/{var}", ResponseFormat = WebMessageFormat.Json)]
-        Cliente BuscarCliente(string tipo, string var);
+        List<Cliente> BuscarCliente(string tipo, string var);
 
         [OperationContract]
         [WebInvoke(Method = "PUT", UriTemplate = "Clientes", ResponseFormat = WebMessageFormat.Json)]
