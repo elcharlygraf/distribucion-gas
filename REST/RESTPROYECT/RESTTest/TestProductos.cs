@@ -16,7 +16,7 @@ namespace RESTTest
         [TestMethod]
         public void TestCrearProductos()
         {
-            string postdata = "{\"producto\":\"aaaaaaa\",\"descripcion\":\"qqqqqqqq\",\"precio\":1111}";
+            string postdata = "{\"producto\":\"yyyy\",\"descripcion\":\"yyyy\",\"precio\":555}";
             byte[] data = Encoding.UTF8.GetBytes(postdata);
             HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://localhost:1938/Productos.svc/Productos");
             req.Method = "POST";
@@ -29,15 +29,15 @@ namespace RESTTest
             string productoJson = reader.ReadToEnd();
             JavaScriptSerializer js = new JavaScriptSerializer();
             Producto productoCreado = js.Deserialize<Producto>(postdata);
-            Assert.AreEqual("aaaaaaa", productoCreado.producto);
-            Assert.AreEqual("qqqqqqqq", productoCreado.descripcion);
-            Assert.AreEqual(1111, productoCreado.precio);
+            Assert.AreEqual("yyyy", productoCreado.producto);
+            Assert.AreEqual("yyyy", productoCreado.descripcion);
+            Assert.AreEqual(555, productoCreado.precio);
         }
 
         [TestMethod]
         public void TestCrearProductosException()
         {
-            string postdata = "{\"producto\":\"aaaaaaa\",\"descripcion\":\"qqqqqqqq\",\"precio\":1111}";
+            string postdata = "{\"producto\":\"xx\",\"descripcion\":\"xxxxx\",\"precio\":89}";
             byte[] data = Encoding.UTF8.GetBytes(postdata);
             HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://localhost:1938/Productos.svc/Productos");
             req.Method = "POST";
@@ -53,9 +53,9 @@ namespace RESTTest
                 string productoJson = reader.ReadToEnd();
                 JavaScriptSerializer js = new JavaScriptSerializer();
                 Producto productoCreado = js.Deserialize<Producto>(postdata);
-                Assert.AreEqual("aaaaaaa", productoCreado.producto);
-                Assert.AreEqual("qqqqqqqq", productoCreado.descripcion);
-                Assert.AreEqual(1111, productoCreado.precio);
+                Assert.AreEqual("xx", productoCreado.producto);
+                Assert.AreEqual("xxxxx", productoCreado.descripcion);
+                Assert.AreEqual(89, productoCreado.precio);
             }
             catch (WebException w)
             {

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9F56049D-DCA7-42C4-B4BD-7D26F3B7C194}</ProjectGuid>
+    <ProjectGuid>{6808F4EA-DA78-49A8-A01E-33784FF7AAD7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SOAPTest</RootNamespace>
@@ -48,17 +48,19 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Service References\ClientesWS\Reference.cs">
+    <Compile Include="ProductosTest.cs" />
+    <Compile Include="Service References\ProductosWS\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -66,37 +68,37 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Service References\ClientesWS\Clientes.wsdl" />
-    <None Include="Service References\ClientesWS\Clientes.xsd">
+    <None Include="Service References\ProductosWS\Productos.wsdl" />
+    <None Include="Service References\ProductosWS\Productos.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientesWS\Clientes1.xsd">
+    <None Include="Service References\ProductosWS\Productos1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientesWS\Clientes2.xsd">
+    <None Include="Service References\ProductosWS\Productos2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientesWS\Clientes3.xsd">
+    <None Include="Service References\ProductosWS\Productos3.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientesWS\SOAPTest.ClientesWS.Cliente.datasource">
+    <None Include="Service References\ProductosWS\SOAPTest.ProductosWS.Producto.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\ClientesWS\" />
+    <WCFMetadataStorage Include="Service References\ProductosWS\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ClientesWS\Clientes.disco" />
+    <None Include="Service References\ProductosWS\Productos.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ClientesWS\configuration91.svcinfo" />
+    <None Include="Service References\ProductosWS\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ClientesWS\configuration.svcinfo" />
+    <None Include="Service References\ProductosWS\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ClientesWS\Reference.svcmap">
+    <None Include="Service References\ProductosWS\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
