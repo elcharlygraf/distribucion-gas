@@ -13,6 +13,8 @@ namespace RESTPROYECT.Persistencia
         {
             Pedido PedidoCreado = null;
             string sql = "INSERT INTO t_pedidos VALUES (@idCliente, @montoTotal, @idEstado, @fechaPedido)";
+            string sqlIdentity = "Select @@Identity";
+            int idPedidoCreado;
             using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
             {
                 con.Open();
@@ -23,9 +25,13 @@ namespace RESTPROYECT.Persistencia
                     com.Parameters.Add(new SqlParameter("@idEstado", PedidoACrear.idEstado));
                     com.Parameters.Add(new SqlParameter("@fechaPedido", PedidoACrear.fechaPedido));
                     com.ExecuteNonQuery();
+                    com.CommandText = sqlIdentity;
+
+                    idPedidoCreado = (int)com.ExecuteScalar();
+
                 }
             }
-            PedidoCreado = Obtener(PedidoACrear.idPedido);
+            PedidoCreado = Obtener(idPedidoCreado);
             return PedidoCreado;
         }
 
@@ -79,7 +85,11 @@ namespace RESTPROYECT.Persistencia
 
         public void Eliminar(Pedido PedidoAEliminar)
         {
-            string sql = "DELETE FROM t_pedidos WHERE idPedido=@idPedido";
+            string sql = "DELETE d,p " +
+                        "FROM t_detallePedido d" +
+                        "INNER JOIN t_pedidos p" +
+                         " ON idPedido=idPedido" +
+                        "Where idPedido=@idPedido ";
             using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
             {
                 con.Open();
@@ -95,7 +105,8 @@ namespace RESTPROYECT.Persistencia
         {
             List<Pedido> pedidosEncontrados = new List<Pedido>();
             Pedido PedidoEncontrado = default(Pedido);
-            string sql = "SELECT * FROM t_pedidos";
+            string sql = "SELECT  P.idCliente,P.montoTotal,P.idEstado,P.fechaPedido, D.cantidad, D.precioUnitario" + 
+                         "FROM t_pedidos P INNER JOIN t_detallePedido D ON P.idPedido=D.idPedido";
             using (SqlConnection conexion = new SqlConnection(ConexionUtil.Cadena))
             {
                 conexion.Open();
@@ -110,7 +121,13 @@ namespace RESTPROYECT.Persistencia
                                 idCliente = (int)resultado["idCliente"],
                                 montoTotal = (decimal)resultado["montoTotal"],
                                 idEstado = (int)resultado["idEstado"],
-                                fechaPedido = (DateTime)resultado["fechaPedido"]
+                                fechaPedido = (DateTime)resultado["fechaPedido"],
+                                detallePedido = new DetallePedido()
+                                {
+                                    cantidad = (int)resultado["cantidad"],
+                                    precioUnitario = (decimal)resultado["precioUnitario"]
+                                }
+
                             };
                             pedidosEncontrados.Add(PedidoEncontrado);
                         }

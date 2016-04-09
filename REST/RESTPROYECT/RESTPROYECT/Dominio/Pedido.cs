@@ -24,5 +24,8 @@ namespace RESTPROYECT.Dominio
         [DataMember]
         public DateTime fechaPedido { get; set; }
 
+        [DataMember]
+        public DetallePedido detallePedido { get; set; }
+
     }
 }
