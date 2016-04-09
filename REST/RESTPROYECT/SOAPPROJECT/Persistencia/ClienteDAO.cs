@@ -1,4 +1,5 @@
-﻿using SOAPPROJECT.Dominio;
+﻿
+using SOAPPROJECT.Dominio;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;

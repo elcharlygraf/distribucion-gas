@@ -53,12 +53,12 @@ namespace SOAPTest
         {
             ProductosWS.ProductosClient proxy = new ProductosWS.ProductosClient();
             int idProducto = 41;
-            ProductosWS.Producto productoAModificar = proxy.ModificarProducto(proxy.ObtenerProducto(idProducto)
-                {
-                productoAModificar.producto = "PRUEBA";
-                productoAModificar.descripcion = "PRUEBA";
-                productoAModificar.precio = 666;
-            })            
+            ProductosWS.Producto productoAModificar = proxy.ModificarProducto(proxy.ObtenerProducto(idProducto));
+              
+            productoAModificar.producto = "PRUEBA";
+            productoAModificar.descripcion = "PRUEBA";
+            productoAModificar.precio = 454;
+                  
             Assert.AreEqual(41, productoAModificar.idProducto);
             Assert.AreEqual("PRUEBA", productoAModificar.producto);
             Assert.AreEqual("PRUEBA", productoAModificar.descripcion);

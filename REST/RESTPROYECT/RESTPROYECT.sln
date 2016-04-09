@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTPROYECT", "RESTPROYECT\RESTPROYECT.csproj", "{0646CBAC-F041-4F06-8FF6-631F17D47A59}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTTest", "RESTTest\RESTTest.csproj", "{DD117CC4-A3CB-4ACC-9D94-381EAC3451B5}"
@@ -13,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOAPTest", "SOAPTest\SOAPTe
 	ProjectSection(ProjectDependencies) = postProject
 		{965C92ED-AB1E-499B-870F-8FC0A9E4147E} = {965C92ED-AB1E-499B-870F-8FC0A9E4147E}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APPCMDPROJECT", "APPCMDPROJECT\APPCMDPROJECT.csproj", "{AC04F4BD-FA2D-4A00-AC50-89466C6898C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +36,10 @@ Global
 		{6808F4EA-DA78-49A8-A01E-33784FF7AAD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6808F4EA-DA78-49A8-A01E-33784FF7AAD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6808F4EA-DA78-49A8-A01E-33784FF7AAD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC04F4BD-FA2D-4A00-AC50-89466C6898C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC04F4BD-FA2D-4A00-AC50-89466C6898C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC04F4BD-FA2D-4A00-AC50-89466C6898C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC04F4BD-FA2D-4A00-AC50-89466C6898C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
