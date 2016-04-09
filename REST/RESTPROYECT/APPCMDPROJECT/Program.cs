@@ -16,13 +16,13 @@ namespace APPCMDPROJECT
             if (!MessageQueue.Exists(rutaCola))
                 MessageQueue.Create(rutaCola);
             MessageQueue cola = new MessageQueue(rutaCola);
-            cola.Formatter = new XmlMessageFormatter(new Type[] { typeof(Producto) });
+            cola.Formatter = new XmlMessageFormatter(new Type[] { typeof(SRWSProducto.Producto) });
 
             Message mensaje = cola.Receive();
-            Producto productoRecibido = (Producto)mensaje.Body;
+            SRWSProducto.Producto productoRecibido = (SRWSProducto.Producto)mensaje.Body;
 
-            ProductosWS.ProductosClient proxy = new ProductosWS.ProductosClient();
-            ProductosWS.Producto productoAModificar = proxy.ModificarProducto(productoRecibido);
+            SRWSProducto.ProductosClient proxy = new SRWSProducto.ProductosClient();
+            SRWSProducto.Producto productoAModificar = proxy.ModificarProducto(productoRecibido);
         }
     }
 }
