@@ -1,0 +1,13 @@
+C:\Users\rasec\GitUpc\REST\RESTPROYECT\SOAPPROJECT\obj\Debug\SOAPPROJECT.csprojResolveAssemblyReference.cache
+C:\Users\rasec\GitUpc\REST\RESTPROYECT\SOAPPROJECT\bin\ApplicationInsights.config
+C:\Users\rasec\GitUpc\REST\RESTPROYECT\SOAPPROJECT\bin\SOAPPROJECT.dll
+C:\Users\rasec\GitUpc\REST\RESTPROYECT\SOAPPROJECT\bin\SOAPPROJECT.pdb
+C:\Users\rasec\GitUpc\REST\RESTPROYECT\SOAPPROJECT\bin\mscorlib.dll
+C:\Users\rasec\GitUpc\REST\RESTPROYECT\SOAPPROJECT\bin\es\mscorlib.resources.dll
+C:\Users\rasec\GitUpc\REST\RESTPROYECT\SOAPPROJECT\bin\normidna.nlp
+C:\Users\rasec\GitUpc\REST\RESTPROYECT\SOAPPROJECT\bin\normnfc.nlp
+C:\Users\rasec\GitUpc\REST\RESTPROYECT\SOAPPROJECT\bin\normnfd.nlp
+C:\Users\rasec\GitUpc\REST\RESTPROYECT\SOAPPROJECT\bin\normnfkc.nlp
+C:\Users\rasec\GitUpc\REST\RESTPROYECT\SOAPPROJECT\bin\normnfkd.nlp
+C:\Users\rasec\GitUpc\REST\RESTPROYECT\SOAPPROJECT\obj\Debug\SOAPPROJECT.dll
+C:\Users\rasec\GitUpc\REST\RESTPROYECT\SOAPPROJECT\obj\Debug\SOAPPROJECT.pdb

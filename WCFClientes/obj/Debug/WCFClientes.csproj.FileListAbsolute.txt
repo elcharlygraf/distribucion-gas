@@ -1,0 +1,44 @@
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\ApplicationInsights.config
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\WCFClientes.dll.config
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\WCFClientes.dll
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\WCFClientes.pdb
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\Microsoft.AI.Web.dll
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\Microsoft.ApplicationInsights.dll
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\Microsoft.AI.Web.xml
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\bin\Microsoft.ApplicationInsights.xml
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\obj\Debug\WCFClientes.csprojResolveAssemblyReference.cache
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\obj\Debug\WCFClientes.dll
+C:\Users\CAPG\Documents\UPC\6 SEXTO CICLO\SISTEMAS DISTRIBUIDOS\Trabajo\losDistribuidos\WCFClientes\obj\Debug\WCFClientes.pdb
+C:\distribucion-gas\WCFClientes\bin\ApplicationInsights.config
+C:\distribucion-gas\WCFClientes\bin\WCFClientes.dll
+C:\distribucion-gas\WCFClientes\bin\WCFClientes.pdb
+C:\distribucion-gas\WCFClientes\bin\Microsoft.AI.Agent.Intercept.dll
+C:\distribucion-gas\WCFClientes\bin\Microsoft.AI.DependencyCollector.dll
+C:\distribucion-gas\WCFClientes\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\distribucion-gas\WCFClientes\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\distribucion-gas\WCFClientes\bin\Microsoft.AI.Web.dll
+C:\distribucion-gas\WCFClientes\bin\Microsoft.AI.WindowsServer.dll
+C:\distribucion-gas\WCFClientes\bin\Microsoft.ApplicationInsights.dll
+C:\distribucion-gas\WCFClientes\bin\mscorlib.dll
+C:\distribucion-gas\WCFClientes\bin\Microsoft.AI.DependencyCollector.xml
+C:\distribucion-gas\WCFClientes\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\distribucion-gas\WCFClientes\bin\Microsoft.AI.Web.xml
+C:\distribucion-gas\WCFClientes\bin\Microsoft.AI.WindowsServer.xml
+C:\distribucion-gas\WCFClientes\bin\Microsoft.ApplicationInsights.xml
+C:\distribucion-gas\WCFClientes\bin\es\mscorlib.resources.dll
+C:\distribucion-gas\WCFClientes\bin\normidna.nlp
+C:\distribucion-gas\WCFClientes\bin\normnfc.nlp
+C:\distribucion-gas\WCFClientes\bin\normnfd.nlp
+C:\distribucion-gas\WCFClientes\bin\normnfkc.nlp
+C:\distribucion-gas\WCFClientes\bin\normnfkd.nlp
+C:\distribucion-gas\WCFClientes\obj\Debug\WCFClientes.csprojResolveAssemblyReference.cache
+C:\distribucion-gas\WCFClientes\obj\Debug\WCFClientes.dll
+C:\distribucion-gas\WCFClientes\obj\Debug\WCFClientes.pdb
