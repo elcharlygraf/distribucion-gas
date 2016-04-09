@@ -1,0 +1,6 @@
+C:\restpe\REST\RESTPROYECT\SOAPTest\bin\Debug\SOAPTest.dll.config
+C:\restpe\REST\RESTPROYECT\SOAPTest\bin\Debug\SOAPTest.dll
+C:\restpe\REST\RESTPROYECT\SOAPTest\bin\Debug\SOAPTest.pdb
+C:\restpe\REST\RESTPROYECT\SOAPTest\obj\Debug\SOAPTest.csprojResolveAssemblyReference.cache
+C:\restpe\REST\RESTPROYECT\SOAPTest\obj\Debug\SOAPTest.dll
+C:\restpe\REST\RESTPROYECT\SOAPTest\obj\Debug\SOAPTest.pdb
